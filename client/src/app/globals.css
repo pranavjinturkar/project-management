@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-white;
+  @apply dark:bg-black;
+}
+
+.timeline ._3_ygE {
+  @apply rounded-tl-md border border-r-0 border-[#e6e4e4] dark:border-stroke-dark;
+}
+.timeline ._2eZzQ {
+  @apply border-[#e6e4e4] dark:border-stroke-dark;
+}
+.timeline ._2dZTy {
+  @apply fill-white dark:fill-dark-seconday;
+}
+.timeline ._2dZTy:nth-child(even) {
+  @apply fill-[#f5f5f5] dark:fill-dark-tertiary;
+}
+.timeline ._35nLX {
+  @apply fill-white stroke-[#e6e4e4] dark:fill-dark-seconday dark:stroke-stroke-dark;
+}
+.timeline ._9w8d5 {
+  @apply fill-[#333] dark:fill-white;
+}
+.timeline ._34SS0 {
+  @apply bg-white dark:bg-dark-seconday;
+}
+.timeline ._34SS0:nth-of-type(even) {
+  @apply bg-[#f5f5f5] dark:bg-dark-tertiary;
+}
+.timeline ._RuwuK,
+.timeline ._3rUKi,
+.timeline ._1rLuZ {
+  @apply stroke-[#e6e4e4] dark:stroke-stroke-dark;
+}
+.timeline ._3ZbQT {
+  @apply border-l-0 border-[#e6e4e4] dark:border-stroke-dark;
+}
+.timeline ._3T42e {
+  @apply bg-white dark:bg-dark-bg;
+}
+.timeline ._29NTg {
+  @apply dark:text-neutral-500;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Light mode scrollbar styles */
+.timeline::-webkit-scrollbar {
+  width: 16px; /* Vertical scrollbar width */
+  height: 16px; /* Horizontal scrollbar height */
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light mode track color */
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background-color: #0275ff; /* Light mode thumb color */
+  border-radius: 6px; /* Rounded corners for the thumb */
+  border: 3px solid #f0f0f0; /* Optional padding to make thumb smaller */
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* Slightly darker shade for hover in light mode */
+}
+
+/* Dark mode scrollbar styles */
+.dark .timeline::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Dark mode track color */
+}
+
+.dark .timeline::-webkit-scrollbar-thumb {
+  background-color: #0275ff; /* Dark mode thumb color */
+  border: 3px solid #1a1a1a; /* Optional padding for contrast */
+}
+
+.dark .timeline::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* Slightly darker shade for hover in dark mode */
+}
+
+/* Firefox-specific styles */
+.timeline {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #0275ff #f0f0f0; /* Light mode colors */
+}
+.timeline:hover {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #0056b3 #f0f0f0; /* Light mode colors */
+}
+
+
+.dark .timeline {
+  scrollbar-color: #0275ff #1a1a1a; /* Dark mode colors */
+}
+.dark .timeline:hover {
+  scrollbar-color: #0056b3 #1a1a1a; /* Dark mode colors */
+}
