@@ -31,7 +31,7 @@ const Settings = () => {
          </div>
          <div>
             <label className={labelStyles}>Role:</label>
-            <div className={textStyles}>{userSettings.teamName}</div>
+            <div className={textStyles}>{userSettings.roleName}</div>
          </div>
       </div>
     </div>

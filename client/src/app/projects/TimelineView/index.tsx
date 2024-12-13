@@ -56,7 +56,7 @@ const Timeline = ({ id, setIsModalNewTaskOpen }: TimelineProps) => {
   return <div className='px-4 xl:px-6'>
       <div className='flex flex-wrap items-center justify-between gap-2 py-5'>
          <h1 className='me-2 text-lg font-bold dark:text-white'>
-            Project's Tasks Timeline
+         Project&apos;s Tasks Timeline
          </h1>
          <div className='relative inline-block w-64'>
             <select 
