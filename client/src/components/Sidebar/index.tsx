@@ -60,7 +60,7 @@ const Sidebar = () => {
         {/* Team */}
         <div className="flex items-center gap-5 border-y-[1.5px] border-gray-200 px-8 py-5 dark:border-gray-700">
           <Image
-            src={"/flowfyLogo.jpeg"}
+            src={"https://pm-bucket-s3-images.s3.ap-south-1.amazonaws.com/flowfyLogo.jpeg"}
             alt="Logo"
             width={40}
             height={40}
